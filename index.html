@@ -8,15 +8,54 @@
 </head>
 <body>
     <div class="container">
-        <nav></nav>
-        <div class="about">
-
+        <nav>
+            <span>Jens Rosseel</span>
+            <a href="#about">About</a>
+            <a href="#code">Languages</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+        <div class="about" id="about">
+            <h1>Hey, I'm Jens</h1>
+            <span>A web developer from Belgium. I create responsive websites to help people in their online adventure.</span>
+            <a href="#projects">My Projects</a>
         </div>
-        <div class="projects">
-
+        <div class="code">
+            <span>These are the languages I am familiar with.</span>
+            <div class="languages">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>php</span>
+                <span>JavaScript</span>
+            </div>
         </div>
-        <div class="contact">
-            
+        <div class="projects" id="projects">
+            <div class="project">
+                <img src="./img/boat_booking_app.JPG" alt="Boat booking app">
+                <h1>Boat Booking App</h1>
+                <div class="buttons">
+                    <a href="https://github.com/B3MS/boat-booking-app" target="_blank" rel="noreferrer noopener">To Repo</a>
+                    <a href="https://boat-booking-app.000webhostapp.com/index.php?page=home" target="_blank" rel="noreferrer noopener">To Deploy</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact" id="contact">
+            <span>Use the form</span>
+            <form action="./contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Write a message..."></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+            <span>Or contact me via one of these</span>
+            <a href="mailto:jensrosseel.business@gmail.com"><img src="./img/mail.png" alt="mail"></a>
+            <a href="https://www.linkedin.com/in/jens-rosseel-a67965212/"><img src="./img/linkedin.png" alt="linkedin"></a>
         </div>
     </div>
 </body>
