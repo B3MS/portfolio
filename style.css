@@ -86,3 +86,65 @@ nav .links a:hover{
     margin-top: 15vh;
     height: 50vh;
 }
+
+.projects{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+
+.projects span{
+    font-size: 40px;
+}
+
+.projects .project{
+    height: 40vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+        "a a b"
+        "a a c"
+    ;
+}
+
+.projects .project img{
+    grid-area: a;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.projects .project h1{
+    grid-area: b;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    border-top: 2px solid #4b6cc1;
+    border-right: 2px solid #4b6cc1;
+}
+
+.projects .project .buttons{
+    grid-area: c;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-right: 2px solid #4b6cc1;
+    border-bottom: 2px solid #4b6cc1;
+}
+
+.projects .project .buttons a{
+    font-size: 30px;
+    text-decoration: none;
+    color: inherit;
+    background-color: #4b6cc1;
+    border-radius: 50px;
+    padding: 2vh;
+    margin: 2vh;
+}
+
+.projects .project .buttons a:hover{
+    background-color: #243d51;
+}
+
