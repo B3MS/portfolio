@@ -44,22 +44,27 @@
             </div>
         </div>
         <div class="contact" id="contact">
-            <span>Use the form</span>
-            <form action="./contact.php" method="post">
-                <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
+            <span>Contact me using the form. <br>Or via one of these.</span>
+            <form action="./mailHandler.php" method="post">
+                <div class="inputs">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Name..." required>
 
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" placeholder="Write a message..."></textarea>
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail..." required>
 
+                    <label for="subject">Subject:</label>
+                    <input type="subject" name="subject" id="subject" placeholder="E-mail..." required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write a message..." required></textarea>
+                </div>
                 <input type="submit" value="Send">
             </form>
-            <span>Or contact me via one of these</span>
-            <a href="mailto:jensrosseel.business@gmail.com"><img src="./img/mail.png" alt="mail"></a>
-            <a href="https://www.linkedin.com/in/jens-rosseel-a67965212/"><img src="./img/linkedin.png" alt="linkedin"></a>
+            <div class="links">
+                <a href="mailto:jensrosseel.business@gmail.com" class="mail"></a>
+                <a href="https://www.linkedin.com/in/jens-rosseel-a67965212/" class="linkedin"></a>
+            </div>
         </div>
     </div>
 </body>

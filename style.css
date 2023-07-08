@@ -44,7 +44,7 @@ nav .links a:hover{
 }
 
 .container{
-    margin: 5vh 5vw 0 5vw;
+    padding: 5vh 5vw 0 5vw;
 }
 
 .about{
@@ -121,8 +121,8 @@ nav .links a:hover{
     width: 90%;
     padding: 5%;
     text-align: justify;
-    border-top: 2px solid #4b6cc1;
-    border-right: 2px solid #4b6cc1;
+    border-top: 2px solid rgba(255, 255, 255, 0.25);
+    border-right: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .projects .project .description h1{
@@ -140,8 +140,8 @@ nav .links a:hover{
     display: flex;
     justify-content: space-evenly;
     align-items: end;
-    border-right: 2px solid #4b6cc1;
-    border-bottom: 2px solid #4b6cc1;
+    border-right: 2px solid rgba(255, 255, 255, 0.25);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .projects .project .buttons a{
@@ -157,3 +157,101 @@ nav .links a:hover{
     background-color: #243d51;
 }
 
+.contact{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
+        "a b"
+        "c b"
+    ;
+}
+
+.contact span{
+    grid-area: a;
+    height: 100%;
+    font-size: 40px;
+    display: flex;
+    align-items: end;
+}
+
+.contact form{
+    grid-area: b;
+    width: 100%;
+}
+
+.contact form .inputs{
+    display: grid;
+}
+
+.contact form .inputs label{
+    font-size: 24px;
+    margin-bottom: 1vh;
+}
+
+.contact form .inputs input, .contact form textarea{
+    margin-bottom: 1vh;
+    padding: 1em;
+    color: inherit;
+    background-color: #191a1d;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 5px;
+}
+
+.contact form .inputs input:focus, .contact form .inputs textarea:focus{
+    outline-color: #4b6cc1;
+}
+
+.contact form textarea{
+    height: 20vh;
+    padding: 1em;
+    resize: none;
+}
+
+.contact form input[type=submit]{
+    width: 100%;
+    font-size: 16px;
+    color: inherit;
+    background-color: #4b6cc1;
+    border: none;
+    border-radius: 50px;
+    padding: 2vh;
+    margin-top: 1vh;
+}
+
+.contact form input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #243d51;
+}
+
+.contact .links{
+    height: 100%;
+    display: flex;
+    align-items: start;
+}
+
+.contact .links a{
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 3em;
+    margin-top: 2vh;
+}
+
+.contact .links .mail{  
+    background-image: url("./img/mail.png");
+    margin-right: 1vw;
+}
+
+.contact .links .mail:hover{
+    background-image: url("./img/mail_hover.png");
+}
+
+
+.contact .links .linkedin{
+    background-image: url("./img/linkedin.png");
+}
+
+.contact .links .linkedin:hover{
+    background-image: url("./img/linkedin_hover.png");
+}
