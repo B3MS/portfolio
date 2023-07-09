@@ -30,6 +30,10 @@ nav span .blue{
     color: #4b6cc1;
 }
 
+nav .burger{
+    display: none;
+}
+
 nav .links a{
     text-decoration: none;
     font-size: 30px;
@@ -254,4 +258,105 @@ nav .links a:hover{
 
 .contact .links .linkedin:hover{
     background-image: url("./img/linkedin_hover.png");
+}
+
+/* Use media queries to change the css for phone and tablet view */
+@media only screen and (max-width: 992px){
+    .open-menu{
+        height: 100vh;
+        display: flex;
+        
+    }
+
+    .open-menu span{
+        position: absolute;
+        top: 0;
+        margin-top: 2vh;
+        height: 6vh;
+    }
+
+    .open-menu .burger{
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 3vh;
+        margin-right: 8vw;
+        height: 6vh;
+    }
+
+    .open-menu .links{
+        height: 100%;
+        width: 100%;
+        margin-top: 20vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav .links{
+        display: none;
+    }
+
+    nav .burger{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin-right: 4vw;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .about{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-left: 10vw;
+    }
+
+    .about .content{
+        width: 100%;
+    }
+    
+    .about .img{
+        display: none;
+    }
+
+    .projects{
+        display: grid;
+        height: 150vh;
+        grid-template-columns: none;
+        grid-template-rows: 33.3% 33.3% 33.3%;
+    }
+
+    .projects span{
+        text-align: center;
+    }
+
+    .projects .project{
+        margin-top: 5vh;
+        grid-template-areas: 
+            "a"
+            "b"
+            "c"
+        ;
+    }
+
+    .contact{
+        height: 150vh;
+        grid-template-areas: 
+            "a"
+            "c"
+            "b"
+        ;
+    }
+
+    .contact span{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact .links{
+        justify-content: space-evenly;
+    }
 }
